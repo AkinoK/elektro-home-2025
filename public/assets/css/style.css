@@ -1,0 +1,123 @@
+/* ナビゲーションバーのスタイル */
+.navbar {
+    height: 80px; /* 高さを調整 */
+    padding: 0 20px; /* 横の余白を調整 */
+}
+
+/* ナビゲーションバーのコンテナをスライドショーと同じ幅にする */
+.navbar .container {
+    max-width: 1000px; /* スライドショーと同じ最大幅に設定 */
+    width: 75%; /* スライドショーの幅と揃える */
+    margin: 0 auto; /* 中央揃え */
+}
+
+/* ロゴとメニューのスタイル */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem; 
+    /* font-weight: bold; */
+    color: #ffffffbc;
+    padding-top: 25px;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+.navbar-brand .logo {
+    height: 50px; /* ロゴの高さ（調整可） */
+    width: auto; /* 幅を自動調整 */
+    margin-right: 10px; /* ロゴとテキストの間の余白 */
+}
+
+/* ナビゲーションメニューのスタイル */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* メニューの間隔 */
+    padding-top: 25px;
+}
+
+/* メニューアイテムのフォントサイズ */
+.navbar-nav .nav-item .nav-link {
+    font-size: 1.0rem;
+    padding: 10px 0px; /* クリックしやすいように余白を追加 */
+}
+
+
+/* ヒーローセクション */
+.hero {
+    background-color: #4E4E4E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 100vh; /* ビューポートの高さいっぱいにする */
+    overflow: hidden;
+}
+
+/* スライドショーコンテナ */
+.slideshow-container {
+    max-width: 1000px;
+    width: 75%;
+    height: 70vh; /* 高さを70vhにして画面中央に配置 */
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 各ビデオスライド */
+.video-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* アクティブなスライドを表示 */
+.video-slide.is-active {
+    opacity: 1;
+}
+
+/* 動画の設定 */
+.video-slide video {
+    width: 100%; /* 幅いっぱい */
+    height: auto; /* 高さは自動調整 */
+    object-fit: cover; /* 画面全体をカバーするように */
+    max-height: 100%; /* 高さを親要素に合わせる */
+}
+
+/* ボタンの基本スタイル */
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 46%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: rgb(161, 160, 160);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    padding: 0px;
+    transition: opacity 0.3sease;
+}
+
+
+/* 左矢印の位置 */
+.prev-btn {
+    left: 10px;
+}
+
+/* 右矢印の位置 */
+.next-btn {
+    right: 10px;
+}
+
+/* ホバー時のアクション */
+.prev-btn:hover, .next-btn:hover {
+    opacity: 0.7;
+}

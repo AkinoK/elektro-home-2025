@@ -1,4 +1,4 @@
-/* ナビゲーションバーのスタイル */
+/* ナビゲーションバー*/
 .navbar {
     height: 80px; /* 高さを調整 */
     padding: 0 20px; /* 横の余白を調整 */
@@ -6,9 +6,9 @@
 
 /* ナビゲーションバーのコンテナをスライドショーと同じ幅にする */
 .navbar .container {
-    max-width: 1000px; /* スライドショーと同じ最大幅に設定 */
-    width: 75%; /* スライドショーの幅と揃える */
-    margin: 0 auto; /* 中央揃え */
+    max-width: 1000px; 
+    width: 75%; 
+    margin: 0 auto;
 }
 
 /* ロゴとメニューのスタイル */
@@ -23,23 +23,23 @@
 }
 
 .navbar-brand .logo {
-    height: 50px; /* ロゴの高さ（調整可） */
-    width: auto; /* 幅を自動調整 */
-    margin-right: 10px; /* ロゴとテキストの間の余白 */
+    height: 50px; 
+    width: auto; 
+    margin-right: 10px; 
 }
 
 /* ナビゲーションメニューのスタイル */
 .navbar-nav {
     display: flex;
     align-items: center;
-    gap: 20px; /* メニューの間隔 */
+    gap: 20px; 
     padding-top: 25px;
 }
 
 /* メニューアイテムのフォントサイズ */
 .navbar-nav .nav-item .nav-link {
     font-size: 1.0rem;
-    padding: 10px 0px; /* クリックしやすいように余白を追加 */
+    padding: 10px 0px; 
 }
 
 
@@ -50,7 +50,7 @@
     justify-content: center;
     align-items: center;
     padding: 0;
-    height: 100vh; /* ビューポートの高さいっぱいにする */
+    height: 100vh; 
     overflow: hidden;
 }
 
@@ -58,7 +58,7 @@
 .slideshow-container {
     max-width: 1000px;
     width: 75%;
-    height: 70vh; /* 高さを70vhにして画面中央に配置 */
+    height: 70vh; 
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -85,10 +85,10 @@
 
 /* 動画の設定 */
 .video-slide video {
-    width: 100%; /* 幅いっぱい */
-    height: auto; /* 高さは自動調整 */
-    object-fit: cover; /* 画面全体をカバーするように */
-    max-height: 100%; /* 高さを親要素に合わせる */
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    max-height: 100%; 
 }
 
 /* ボタンの基本スタイル */
@@ -117,7 +117,6 @@
     right: 10px;
 }
 
-/* ホバー時のアクション */
 .prev-btn:hover, .next-btn:hover {
     opacity: 0.7;
 }

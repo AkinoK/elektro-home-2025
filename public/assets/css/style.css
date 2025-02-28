@@ -180,3 +180,95 @@
     color: #e0e0e0;
     margin: 5px 0 0;
 }
+
+
+
+/* Company Profile セクション */
+
+.section-title h2{
+    text-align: left;
+    color: #0febdd;
+}
+
+.profile {
+    background-color: #4E4E4E;
+
+}
+
+.profile-container {
+    background-color: #4E4E4E; /* 他のセクションと統一 */
+    color: white;
+    padding: 60px 0;
+}
+
+.profile-container {
+    max-width: 1000px; 
+    width: 75%; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-container .section-title {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.profile-container .section-title h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #10c0db;
+}
+
+/* シンプルな表デザイン */
+.kaisha {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    color: white;
+}
+
+/* 枠線なし、下線のみ */
+.kaisha th, .kaisha td {
+    padding: 10px 0;
+    text-align: left;
+    font-size: 1rem;
+    position: relative;
+}
+
+/* 下線のみ */
+.kaisha tr:not(:last-child) td,
+.kaisha tr:not(:last-child) th {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* 日本語テキスト */
+.content_jp_company {
+    display: block;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* クライアントリスト */
+.kaisha ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.kaisha ul li {
+    padding: 5px 0;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 767px) {
+    .kaisha, .kaisha tr, .kaisha td, .kaisha th {
+        display: block;
+    }
+    .kaisha th {
+        width: auto;
+        font-size: 1.2rem;
+        margin-top: 20px;
+    }
+}

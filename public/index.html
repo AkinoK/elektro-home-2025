@@ -36,7 +36,7 @@
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#business_lineup" >Business lineup</a></li>
                     <li class="nav-item"><a class="nav-link" href="#profile">Company profile</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li> -->
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -48,7 +48,7 @@
         <div class="slideshow-container">
             <div class="video-slide is-active">
                 <video autoplay playsinline>
-                    <source src="assets/videos/4.mp4" type="video/mp4">
+                    <source src="assets/videos/4-1.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
@@ -115,8 +115,8 @@
                             </tr>
                             <tr>
                                 <th>Address<span class="content_jp_company"> 住所</span></th></th>
-                                <td>Iriya 2-17-6, Casa Ueno Iriya 101, Taito-ku, Tokyo</td>
-                                <td>東京都台東区入谷２−１７−６カーサ上野入谷１０１</td>
+                                <td>Kanda Higashiyama Building 7F, Kandatacho, Chiyoda-ku, Tokyo</td>
+                                <td>千代田区神田多町2-1神田東山ビルディング7F</td>
                             </tr>
                             <tr>
                                 <th>Established<span class="content_jp_company"> 設立</span></th></th>
@@ -169,15 +169,21 @@
         </div>
     </section><!-- End Company Profile Section -->
     
-    <hr>
+    <section id="projects" class="projects">
+        <div>
+            <br>
+            <br>
+
+        </div>
+    </section>
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact d-flex flex-column justify-content-center align-items-center">
         <div class="contact-container">
 
         <div class="section-title">
             <h2 class="section-title-fadein  pt-5">Contact</h2>
-            <p  id="pp_en">ElektroLibera handles the information it receives in accordance with its <a class="link" href="/privacy_policy_en"> privacy policy</a>.</p>
-            <p  id="pp_jp">受信した個人情報は<a class="link" href="/privacy_policy_jp">プライバシーポリシー</a>に従って取り扱われます。</p>
+            <p  id="pp_en">ElektroLibera handles the information it receives in accordance with its <a class="link" href="./privacy_policy_en.html"> privacy policy</a>.</p>
+            <p  id="pp_jp">受信した個人情報は<a class="link" href="./privacy_policy_jp.html">プライバシーポリシー</a>に従って取り扱われます。</p>
         </div>
         <div class=" justify-content-center">
             <div >
@@ -217,14 +223,20 @@
     
     
     <!-- フッター -->
-    <footer class="bg-dark text-white text-center py-3">
+    <!-- <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2025 ElektroLibera | All Rights Reserved</p>
-    </footer>
+    </footer> -->
 
+    <div id="footer-placeholder"></div> 
+    <!-- Scroll to top -->
+   <div id="scroll-to-top" class="hidden">
+       <a href="#top">^</a>
+   </div> 
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/slideshow.js"></script>
-    <script src="/assets/js/index.js"></script>
+    <script type="module" src="assets/js/index.js"></script>
+
 
 </body>
 </html>

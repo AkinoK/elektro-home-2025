@@ -17,10 +17,13 @@
   ],
   "hosting": {
     "public": "public",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "redirects": [
+      {
+        "source": "/",
+        "destination": "/index.html",
+        "type": 301
+      }
     ]
   }
 }

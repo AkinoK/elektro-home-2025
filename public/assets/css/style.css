@@ -37,7 +37,7 @@
 }
 
 /* メニューアイテムのフォントサイズ */
-.navbar-nav .nav-item .nav-link {
+.navbar-nav .nav-item.nav-link {
     font-size: 1.0rem;
     padding: 10px 0px; 
 }
@@ -181,6 +181,18 @@
     margin: 5px 0 0;
 }
 
+/* projectsセクション */
+#projects {
+    background-color: #1A1A1A;
+    display: flex;
+    height: 20vh;
+    /* justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    height: 85vh; */
+    overflow: hidden;
+}
+
 
 
 /* Company Profile セクション */
@@ -278,182 +290,425 @@
 
 #contact {
     background-color: #4E4E4E;
-
+    padding-bottom: 30px;
 
 }
 
-.contact-container {
-    background-color: #4E4E4E;
+.contact-container{
+    max-width: 1000px;
+    width: 75%;
+    margin: 0 auto;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+#pp_en{
+  font-size: 15px;
+  color: #fff;
+}
+
+#pp_jp{
+  font-size: 13px;
+  color: #fff;
+}
+
+#contact .info {
+padding: 30px;
+width: 100%;
+background: #fff;
+box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+#contact .info i {
+font-size: 20px;
+color: #1bac91;
+float: left;
+width: 44px;
+height: 44px;
+background: #e1f0ee;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50px;
+transition: all 0.3s ease-in-out;
+}
+
+
+#contact .info h4 {
+padding: 0 0 0 60px;
+font-size: 22px;
+font-weight: 600;
+margin-bottom: 5px;
+color: #21413c;
+}
+#contact .info p {
+padding: 0 0 0 60px;
+margin-bottom: 0;
+font-size: 14px;
+color: #43857a;
+}
+
+
+.email-form.form-group {
+padding-bottom: 8px;
+}
+.email-form.sent-message {
+display: none;
+color: #fff;
+background: #18d26e;
+text-align: center;
+padding: 15px;
+font-weight: 600;
+}
+.email-form.loading {
+display: none;
+background: #fff;
+text-align: center;
+padding: 15px;
+}
+.email-form.loading:before {
+content: "";
+display: inline-block;
+border-radius: 50%;
+width: 24px;
+height: 24px;
+margin: 0 10px -6px 0;
+border: 3px solid #18d26e;
+border-top-color: #eee;
+-webkit-animation: animate-loading 1s linear infinite;
+animation: animate-loading 1s linear infinite;
+}
+.email-form input, .email-form textarea {
+border-radius: 0;
+box-shadow: none;
+font-size: 14px;
+}
+.email-form input {
+height: 44px;
+}
+.email-form textarea {
+padding: 10px 12px;
+}
+.email-form button[type=submit] {
+  /* #1BFC9E,#0febdd,#29B7F5,#21AFFD */
+background: -moz-linear-gradient(top left, #1BFC9E, #1BFC9E); 
+background: -webkit-linear-gradient(top left, #1BFC9E, #0febdd); 
+background: linear-gradient(to bottom right, #1BFC9E, #29B7F5);
+border: 0;
+padding: 10px 24px;
+color: #fff;
+transition: 0.4s;
+border-radius: 4px;
+}
+.email-form button[type=submit]:hover {
+transform: scale(1.1);
+cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.submit-message {
+  color: green;
+  text-align: center;
+}
+
+.error-message{
+  color: red;
+  text-align: center;
+}
+.errorMsg {
+  color: red;
+  font-size: 13px;
+}
+
+@-webkit-keyframes animate-loading {
+0% {
+  transform: rotate(0deg);
+}
+100% {
+  transform: rotate(360deg);
+}
+}
+@keyframes animate-loading {
+0% {
+  transform: rotate(0deg);
+}
+100% {
+  transform: rotate(360deg);
+}
+}
+
+/* BUSINESS LINEUP セクション */
+.business_lineup {
+    background-color: #1A1A1A;
     color: white;
-    max-width: 1000px; 
-    width: 75%; 
+    padding: 40px 0;
+}
+
+/* 横並びのレイアウト（デスクトップ用） */
+.business_lineup-container {
+    max-width: 1000px;
+    width: 75%;
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-
+    justify-content: space-between;
+    align-items: center;
 }
 
-
-
-.contact-container .section-title {
-    text-align: left;
-    width: 100%;
-    margin-bottom: 20px;
+/* ボタンのコンテナ */
+.business_lineup-buttons {
+    display: flex;
+    gap: 20px;
 }
 
-.contact-container .section-title h2 {
-    font-size: 2rem;
+/* ボタンと説明をまとめる */
+.business_option {
+    text-align: center;
+    flex: 1;
+}
+
+/* グラデーションボタン */
+.btn-business {
+    background: linear-gradient(45deg, #00A3E0, #00D1B2);
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
     font-weight: bold;
-    color: #10c0db;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    width: 275px; 
+    height: 80px; 
+    text-align: center;
 }
 
-.contact .contact-link a i.fa.fa-envelope {
-    font-size: 48px; 
-    transition: transform 0.3s ease; 
-    text-decoration: none; 
-    color: transparent;
-    background: repeating-linear-gradient(0deg, #1BFC9E, #0febdd, #29B7F5, #21AFFD);
-    -webkit-background-clip: text;
-    background-clip: text;
-    margin: -20px 0;
+/* ホバー時の色 */
+.btn-business:hover {
+    background: linear-gradient(45deg, #0088C7, #00A38E);
+}
+
+/* サブテキスト（小さめの日本語テキスト） */
+.btn-business p {
+    font-size: 0.8rem;
+    color: #e0e0e0;
+    margin: 5px 0 0;
+}
+
+/* ===== スマホ用のレスポンシブ対応 ===== */
+@media (max-width: 768px) {
+    .business_lineup-container {
+        flex-direction: column; /* 縦並びにする */
+        text-align: center;
+    }
+
+    .business_lineup-buttons {
+        flex-direction: column; /* ボタンも縦並びに */
+        gap: 10px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .btn-business {
+        width: 90%; /* 幅を画面いっぱいに近づける */
+        height: auto;
+        padding: 12px 0;
+    }
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+/* #footer-placeholder{
+    max-width: 1000px;
+    width: 75%;
+
+} */
+
+.p-4{
+    width: 75%;
+}
+
+
+.footer-container{
+    background-color: #1A1A1A;
+    color: #fff;
+}
+
+.menu-container {
+    padding-top: 10px; 
   }
   
-  .contact .contact-link a:hover i.fa.fa-envelope {
-    transform: scale(1.15); 
-  }
-  
-  /* コンタクトフォーム */
-  
-  #pp_en{
-    font-size: 15px;
-  }
-  
-  #pp_jp{
-    font-size: 13px;
-  }
-  
-  .contact .info {
-  padding: 30px;
-  width: 100%;
-  background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  }
-  .contact .info i {
-  font-size: 20px;
-  color: #1bac91;
-  float: left;
-  width: 44px;
-  height: 44px;
-  background: #e1f0ee;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
-  }
-  .contact .info h4 {
-  padding: 0 0 0 60px;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: #21413c;
-  }
-  .contact .info p {
-  padding: 0 0 0 60px;
-  margin-bottom: 0;
-  font-size: 14px;
-  color: #43857a;
-  }
+.menu-container ul {
+    font-size: 0.9em; 
+    margin-bottom: 0; 
+}
   
   
-  .contact .email-form .form-group {
-  padding-bottom: 8px;
-  }
-  .contact .email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  }
-  .contact .email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-  }
-  .contact .email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-  }
-  .contact .email-form input, .contact .email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-  }
-  .contact .email-form input {
-  height: 44px;
-  }
-  .contact .email-form textarea {
-  padding: 10px 12px;
-  }
-  .contact .email-form button[type=submit] {
-    /* #1BFC9E,#0febdd,#29B7F5,#21AFFD */
-  background: -moz-linear-gradient(top left, #1BFC9E, #1BFC9E); 
-  background: -webkit-linear-gradient(top left, #1BFC9E, #0febdd); 
-  background: linear-gradient(to bottom right, #1BFC9E, #29B7F5);
-  border: 0;
-  padding: 10px 24px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 4px;
-  }
-  .contact .email-form button[type=submit]:hover {
-  transform: scale(1.1);
-  cursor: pointer;
+  /* .address-container {
+    
   }
   
-  .hidden {
+  .map-container {
+    
+  } */
+  
+  
+  #google-map-container {
+    width: auto; 
+    max-width: 100%; 
+    height: 200px; 
+    overflow: hidden; 
+  }
+  
+  @media (max-width: 768px) {
+    #google-map-container {
+        height: 150px; 
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Back to top button
+  --------------------------------------------------------------*/
+  #scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color:#8be6e0;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  
+  #scroll-to-top a{
+    color: #fff;
+  }
+  
+  #scroll-to-top.hidden {
     display: none;
   }
   
-  .submit-message {
-    color: green;
-    text-align: center;
+
+/*--------------------------------------------------------------
+# Privacy Policy
+--------------------------------------------------------------*/
+
+#privacy_policy{
+    padding: 0 0 0 0;
+    margin: 100px 100px 0 100px;
+  
   }
   
-  .error-message{
-    color: red;
-    text-align: center;
-  }
-  .errorMsg {
-    color: red;
-    font-size: 13px;
+  #privacy_policy h1{
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 56px;
+    color: Black;
+    /* position: relative; */
+    font-family: Tahoma,Verdana,Segoe,sans-serif;
+    }
+  
+    #privacy_policy div{
+  
+    padding: 20px;
+    } 
+  
+    #privacy_policy div p{
+      margin: 0;
+    }
+  
+  /* #pp_title {
+    display: flex;
+  } */
+  
+  #pp_titleletters {
+    /* text-align: left; */
+    padding: 20px 20px 20px 40px;
+    display: flex;             /* Enables flexbox layout */
+    justify-content: space-between; /* Places content on opposite ends */
+    align-items: center;  
   }
   
-  @-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
+  #language_selector {
+    text-decoration:underline;  
+    padding-right: 20px;
+    color: #000000;  
+    text-underline-offset: 5px;
+    font-size: large;
   }
-  100% {
-    transform: rotate(360deg);
+  
+  /* #pp_container{
+    height: 10em;
+     position: relative
+  } */
+  
+  #pp_statement{
+    text-indent: 3em;
+    margin: 0;
+    /* top: 50%;                          */
+    /* transform: translate(0, 25%) */
   }
+  
+  #pp_title2::first-letter{
+    color:#1BFC9E;
   }
-  @keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
+  
+  #pp_title1::first-letter{
+    color:#29B7F5;
   }
-  100% {
-    transform: rotate(360deg);
+  
+  #pp_beginning{
+    font-weight: bold;
   }
+  
+  .pp_h5{
+    font-weight: bold;
   }
+  
+  @media (max-width: 992px){
+  
+    .contents.pp_contents{
+      display: block;   
+      height: 100%;
+      width: 100%;
+    }
+  
+    #business_lineup{
+     height: 100%;
+    }
+  
+    .pp_container{
+      width: 100%;
+    }
+  
+    #privacy_policy{
+      padding: 0;
+      margin: 35px 0 0 0;
+    
+    }
+    #privacy_policy div{
+      padding: 5px;
+      margin-top: 20px;
+    }
+  
+    #privacy_policy h1{
+      font-size: 25px;
+    }
+  
+    #language_selector {
+      font-size: unset;
+    }
+  
+  }
+  
